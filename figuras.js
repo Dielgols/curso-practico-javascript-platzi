@@ -44,6 +44,19 @@ function areaCirculo(radio) {
 
 console.groupEnd();
 
+// Código del triángulo isósceles
+console.group("Triángulo isósceles");
+
+function areaIsosceles(lado1, lado2, base) {
+  if (lado1 === lado2 && lado1 != base) {
+    return Math.sqrt(lado1 ** 2 - base ** 2 / 4);
+  }
+  else {
+    console.log("Esto no es un triángulo isósceles");
+  }
+}
+
+console.groupEnd();
 
 // Aquí interactuamos con el HTML
 function calcularPerimetroCuadrado() {
